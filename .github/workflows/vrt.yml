@@ -10,9 +10,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '16'
-          cache: 'yarn'
-      - name: Yarn Install
-        run: yarn install --frozen-lockfile --ignore-scripts
+          cache: 'npm'
+      - name: npm Install
+        run: npm install
       - name: Exec screenshot 👕
         run: yarn screenshot
       - uses: bokuweb/reg-actions@v1
